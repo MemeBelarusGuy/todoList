@@ -1,0 +1,132 @@
+@mixin task(){
+  width:43%;
+  height:100px;
+  border-radius: 10px;
+  position:relative;
+  top:100px;
+  left:100px;
+  background:white;
+  margin-top:10px;
+}
+@mixin onSave(){
+  width:15%;
+  position:relative;
+  top:75px;
+  left:5%;
+  margin-right:10px;
+  background:black;
+  color:white;
+  border-radius: 10px;
+  transition:all .2s linear;
+  &:hover{
+    color:coral;
+  }
+  cursor: pointer;
+}
+.save,.cancel{
+  @include onSave();
+}
+.doneTask{
+  @include task();
+  border:3px solid green;
+}
+.processingTask{
+  @include task();
+  border:3px solid grey;
+}
+.failedtask{
+  @include task();
+  border:3px solid red;
+}
+.editFinish{
+  position:absolute;
+  border:1px solid black;
+  top:75px;
+  right:26%;
+  height:15px;
+}
+.title{
+  min-width: 38%;
+  max-width: 38%;
+  min-height: 60px;
+  max-height: 60px;
+  width:38%;
+  height:60px;
+  position:absolute;
+  top:10px;
+  left:10px;
+  font-size:1.2vw;
+  overflow: auto;
+  padding:5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+@mixin date(){
+  width:18%;
+  position:absolute;
+  top:10px;
+  display:flex;
+  justify-content: center;
+  font-size:1.2vw;
+}
+.createdAt{
+  @include date();
+  right:42%;
+}
+@mixin date_year(){
+  width:80px;
+  position:absolute;
+  right:230px;
+  top:50px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  font-size:1.2vw;
+}
+.createdAt_year{
+  @include date_year();
+  right:45%;
+}
+.finishAt{
+  @include date();
+  right:27%;
+}
+.finishAt_year{
+  @include date_year();
+  right:30%;
+}
+@mixin button(){
+  width:40px;
+  position:absolute;
+  top:30px;
+  cursor: pointer;
+  &:hover{
+
+  }
+}
+.done{
+  @include button();
+  right:20%;
+}
+.edit{
+  @include button();
+  right:11%;
+}
+.del{
+  @include button();
+  right:3%;
+}
+@keyframes rot {
+  to{
+    transform: rotateZ(360deg);
+  }
+}
+.preloader{
+  width:20px;
+  height:20px;
+  position:absolute;
+  top:-5px;
+  right:-5px;
+  background:coral;
+  animation:rot linear .8s infinite;
+}

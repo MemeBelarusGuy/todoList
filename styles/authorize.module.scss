@@ -1,0 +1,142 @@
+.title {
+  width: 150px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  font-size: 20pt;
+  color: #2a2a2a;
+}
+
+.error {
+  width: 300px;
+  color: black;
+  font-size: 16pt;
+  position: absolute;
+  right: 100px;
+  bottom: 100px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0px 0px 10px white;
+}
+
+.form {
+  width: 500px;
+  height: 300px;
+  border: 1px solid white;
+  position: relative;
+  margin: 150px auto;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0px 0px 10px white;
+}
+
+@mixin label {
+  width: 300px;
+  position: relative;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.nameLabel {
+  @include label()
+}
+
+.passwordLabel {
+  @include label()
+}
+
+.nameImg {
+  width: 50px;
+}
+
+.passwordImg {
+  width: 40px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.input {
+  border-radius: 10px;
+  padding: 5px;
+  width: 200px;
+  height: 30px;
+  display: flex;
+  font-size: 18pt;
+  transition: all .2s linear;
+  border: 2px solid black;
+
+  &:hover {
+    background: #2a2a2a;
+    color: white;
+
+    &::placeholder {
+      color: white;
+    }
+
+    cursor: pointer;
+  }
+
+  &:focus {
+    background: #2a2a2a;
+    color: white;
+
+    &::placeholder {
+      color: white;
+    }
+  }
+
+  &::placeholder {
+    color: black;
+  }
+}
+
+.log {
+  width: 130px;
+  font-size: 16pt;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  background: #2a2a2a;
+  color: white;
+  transition: all .2s linear;
+
+  &:hover {
+    color: #2a2a2a;
+    background: white;
+    border: 2px solid black;
+    box-shadow: 0px 0px 5px black;
+  }
+
+  cursor: pointer;
+}
+.link{
+  color:black;
+  text-decoration: none;
+  width:200px;
+  display:flex;
+  font-size:14pt;
+  justify-content: center;
+  &:hover{
+    text-decoration: 1px solid underline;
+  }
+}
+@keyframes rot {
+  to{
+    transform: rotateZ(360deg);
+  }
+}
+.preloader{
+  width:20px;
+  height:20px;
+  margin:0px auto;
+  background:white;
+  animation:rot linear .8s infinite;
+}
