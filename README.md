@@ -1,38 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<strong>This is todoList Network</strong>
 
-## Getting Started
+<strong>How to run the project:</strong>
+<strong><p>MAIN BRANCH - FRONTEND.</p></strong>
+<strong><p>MASTER BRANCH - BACKEND</p></strong>
+<p>Note:sorry for that , I didn't fully understand how to upload the project to github correctly</p>
+<strong><p>1.Create empty folder to where you gonna upload project.</p></strong>
+<strong><p>2.Download MASTER and MAIN branch.</p></strong>
+<strong><p>3.Store MASTER and MAIN branch into your folder.Your project:</p></strong>
 
-First, run the development server:
+![project](https://github.com/MemeBelarusGuy/todoList/blob/main/img/project.png)
+<strong><p>4.Your Backend: cd .\todoList-master\ -> npm i -> npm run start:dev</p></strong>
+<strong><p>5.Your Client: cd .\todoList-main\ -> npm i -> npm run dev</p></strong>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+<strong><p>NOTE : AFTER YOU AUTHORIZED/REGISTER YOUR USERDATA WILL STORE AT SESSION STORAGE.<br>
+WHEN YOU LOGOUT SESSIONSTORAGE WILL BE CLEAR</p></strong>
+<strong><p>NOTE : WHEN YOU AUTHORIZED AND RELOAD EX. PAGE /USERS IT WILL THROUGH U TO LOGIN PAGE.<br>
+THEN BROWSER CHECK IF SESSIONSTORAGE HAS YOUR USERDATA AND IF SO IT GONNA LOG YOU INTO / PAGE.<br>
+SO WITH SLOW INTERNET CONNECTION IT WOULD SEEMS WEIRD.DONT PANIC. JUST WAIT A BIT WHILE REQUEST WILL BE DONE.</p></strong>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+LOGIN PAGE:<br>
+![project](https://github.com/MemeBelarusGuy/todoList/blob/main/img/login.png)
+INVALID LOGIN:<br>
+![project](https://github.com/MemeBelarusGuy/todoList/blob/main/img/invalid_login.png)
+INCORRECT LOGIN:<br>
+![project](https://github.com/MemeBelarusGuy/todoList/blob/main/img/incorrect_login.png)
+REGISTRATION:<br>
+![project](https://github.com/MemeBelarusGuy/todoList/blob/main/img/user_exist.png)
+NEW USER MAINPAGE:<br>
+![project](https://github.com/MemeBelarusGuy/todoList/blob/main/img/mainPage_new.png)
+ADD TASK:<br>
+![project](https://github.com/MemeBelarusGuy/todoList/blob/main/img/addTask.png)
+MAIN PAGE (green:done,grey:processing,red:failed):<br>
+![project](https://github.com/MemeBelarusGuy/todoList/blob/main/img/primeTasks.png)
+EDIT TASK:<br>
+![project](https://github.com/MemeBelarusGuy/todoList/blob/main/img/onEditTask.png)
+DELETE TASK:<br>
+![project](https://github.com/MemeBelarusGuy/todoList/blob/main/img/taskDeleted.png)
+EDIT STATUS:<br>
+![project](https://github.com/MemeBelarusGuy/todoList/blob/main/img/editStatus.png)
+USERS PAGE:<br>
+![project](https://github.com/MemeBelarusGuy/todoList/blob/main/img/users.png)
+USER:id PAGE:<br>
+![project](https://github.com/MemeBelarusGuy/todoList/blob/main/img/user.png)
+ADD FRIEND:<br>
+![project](https://github.com/MemeBelarusGuy/todoList/blob/main/img/addFriend.png)
+DELETE FRIEND:<br>
+![project](https://github.com/MemeBelarusGuy/todoList/blob/main/img/deleteFriend.png)
+FRIENDS PAGE:<br>
+![project](https://github.com/MemeBelarusGuy/todoList/blob/main/img/friends.png)
+DELETE ACCOUNT:<br>
+![project](https://github.com/MemeBelarusGuy/todoList/blob/main/img/deleteAccount.png)
+LOGOUT:<br>
+![project](https://github.com/MemeBelarusGuy/todoList/blob/main/img/logout.png)
