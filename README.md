@@ -17,6 +17,8 @@ WHEN YOU LOGOUT SESSIONSTORAGE WILL BE CLEAR</p></strong>
 <strong><p>NOTE : WHEN YOU AUTHORIZED AND RELOAD EX. PAGE /USERS IT WILL THROW U TO LOGIN PAGE.<br>
 THEN BROWSER CHECK IF SESSIONSTORAGE HAS YOUR USERDATA AND IF SO IT GONNA LOG YOU INTO / PAGE.<br>
 SO WITH SLOW INTERNET CONNECTION IT WOULD SEEMS WEIRD.DONT PANIC. JUST WAIT A BIT WHILE REQUEST WILL BE DONE.</p></strong>
+<strong><p>Task.done===1?green:grey/red.<br>
+When you run project client check's today date and if today date>finish date and task.done=0 then it get's red status</p></strong>
 
 LOGIN PAGE:<br>
 ![project](https://github.com/MemeBelarusGuy/todoList/blob/main/img/login.png)
